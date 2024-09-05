@@ -3,7 +3,7 @@
 int main () {
     int num1, num2, i;
     
-    printf("Enter 2 number: ");
+    printf("Enter 2 numbers: ");
     scanf("%d %d", &num1, &num2);
 
     if (num1 > num2) {
@@ -14,10 +14,9 @@ int main () {
         for (i = num1; i <= num2; i++)
         {
             //เลขที่นับมาต้องผ่านขั้นตอนนี้ที่เลขต้องหารด้วย 13 ลงตัว
-            while (i % 13 == 0)
+            if (i % 13 == 0)
             {
                 printf("%d\n", i);
-                i++;
             }    
         }  
     }
